@@ -21,6 +21,12 @@ public class MappingController {
         return "ok";
     }
 
+    @RequestMapping(value = "/mapping-get-v1", method = RequestMethod.GET)
+    public String mappingGetV1() {
+        log.info("mappingGetV1");
+        return "ok";
+    }
+
     /**
      * 편리한 축약 애노테이션 (코드보기)
      * @GetMapping
